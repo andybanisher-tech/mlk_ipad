@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetTaskToCustViewController">
+            <connections>
+                <outlet property="btnTaskList" destination="eLt-K3-Y9D" id="wOr-bn-x4g"/>
+                <outlet property="labelTaskEndDate" destination="23" id="50"/>
+                <outlet property="saveTask" destination="jTC-kW-bxZ" id="Blk-ze-B7K"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayBackground" translatesAutoresizingMaskIntoConstraints="NO" id="YHr-4m-ehX">
+                    <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Срок исполнения:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22">
+                    <rect key="frame" x="20" y="45" width="145" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Дата" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23">
+                    <rect key="frame" x="173" y="45" width="174" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="174" id="30"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTC-kW-bxZ" customClass="RWBorderedButton">
+                    <rect key="frame" x="169" y="227" width="162" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="162" id="cpG-Ee-CQU"/>
+                        <constraint firstAttribute="height" constant="53" id="oZf-SP-ufa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <state key="normal" title="Сохранить">
+                        <color key="titleColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <buttonConfiguration key="configuration" style="plain" title="Сохранить">
+                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <color key="baseForegroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="btnSaveTaskTapped:" destination="-1" eventType="touchUpInside" id="OgG-ZT-50h"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLt-K3-Y9D" customClass="RWBorderedButton">
+                    <rect key="frame" x="50" y="132.5" width="400" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="7uO-HS-Ikf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Выберите задачу">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <buttonConfiguration key="configuration" style="plain" title="Выберите задачу">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="btnListTapped:" destination="-1" eventType="touchUpInside" id="DRm-eY-HEQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="uwl-ZE-Khq"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="22" firstAttribute="baseline" secondItem="23" secondAttribute="baseline" id="38"/>
+                <constraint firstItem="22" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="42"/>
+                <constraint firstItem="23" firstAttribute="leading" secondItem="22" secondAttribute="trailing" constant="8" symbolic="YES" id="49"/>
+                <constraint firstItem="22" firstAttribute="top" secondItem="uwl-ZE-Khq" secondAttribute="top" constant="25" id="4ZJ-8J-rSk"/>
+                <constraint firstItem="YHr-4m-ehX" firstAttribute="width" secondItem="2" secondAttribute="width" id="E4o-tB-UG0"/>
+                <constraint firstItem="YHr-4m-ehX" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="FMQ-z4-DjU"/>
+                <constraint firstItem="eLt-K3-Y9D" firstAttribute="width" secondItem="2" secondAttribute="width" multiplier="0.8" id="K7A-lW-hvs"/>
+                <constraint firstItem="jTC-kW-bxZ" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="KvO-K5-Ppm"/>
+                <constraint firstItem="eLt-K3-Y9D" firstAttribute="centerY" secondItem="2" secondAttribute="centerY" id="cnd-UI-JaZ"/>
+                <constraint firstItem="YHr-4m-ehX" firstAttribute="height" secondItem="2" secondAttribute="height" id="gfY-k8-Qxp"/>
+                <constraint firstItem="uwl-ZE-Khq" firstAttribute="bottom" secondItem="jTC-kW-bxZ" secondAttribute="bottom" constant="20" id="idz-GM-LuR"/>
+                <constraint firstItem="eLt-K3-Y9D" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="k65-aB-QiS"/>
+                <constraint firstItem="YHr-4m-ehX" firstAttribute="top" secondItem="2" secondAttribute="top" id="uRG-eR-QM9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138.28125" y="116.60156249999999"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="grayBackground" width="1024" height="767"/>
+    </resources>
+</document>

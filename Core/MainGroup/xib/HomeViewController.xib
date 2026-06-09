@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="badgeLabel" destination="mTe-Bi-p9a" id="iBA-EP-uzu"/>
+                <outlet property="btnLogin" destination="lUW-tv-0kA" id="qo8-g5-VZf"/>
+                <outlet property="btnLogout" destination="qmd-v1-nRf" id="jHx-ju-azF"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="mainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="13">
+                    <rect key="frame" x="0.0" y="26" width="1024" height="742"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мир Лечебной Косметики" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRp-jD-lzy">
+                    <rect key="frame" x="50" y="70" width="588.5" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Российский дистрибьютор Здоровья и Красоты" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59I-54-vvY">
+                    <rect key="frame" x="50" y="140" width="639.5" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="laP-Xc-lez">
+                    <rect key="frame" x="748.5" y="303" width="157" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUW-tv-0kA">
+                            <rect key="frame" x="0.0" y="0.0" width="157" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="LEA-Bj-dQX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="5" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Авторизация" image="profile">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnLoginTapped:" destination="-1" eventType="touchUpInside" id="etK-S9-DEw"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmd-v1-nRf">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="qmd-v1-nRf" secondAttribute="height" id="OzX-70-zCG"/>
+                                <constraint firstAttribute="height" constant="40" id="PRO-KR-0XO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="logout">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnLogoutTapped:" destination="-1" eventType="touchUpInside" id="2aP-bO-c0C"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="e1z-FR-sBo">
+                    <rect key="frame" x="748.5" y="368" width="195.5" height="300"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17">
+                            <rect key="frame" x="0.0" y="0.0" width="195.5" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="eOE-iQ-wvN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="5" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Синхронизация ∨" image="menuSync">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnSyncTapped:" destination="-1" eventType="touchUpInside" id="ChK-Kl-eDj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16">
+                            <rect key="frame" x="0.0" y="65" width="195.5" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="5" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Информация" image="menuInfo">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="showSettings" destination="-1" eventType="touchUpInside" id="20"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28">
+                            <rect key="frame" x="0.0" y="130" width="195.5" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="5" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Уведомления" image="menuNotification">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="showNotice" destination="-1" eventType="touchUpInside" id="31"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24">
+                            <rect key="frame" x="0.0" y="195" width="195.5" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="5" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Инструкция" image="menuInsruction">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openUserDoc:" destination="-1" eventType="touchUpInside" id="8hC-ag-wfM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ein-LJ-cWs">
+                            <rect key="frame" x="0.0" y="260" width="195.5" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="5" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Обратная связь" image="menuFeedback">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="showMailCompose:" destination="-1" eventType="touchUpInside" id="gyK-6L-gnz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTe-Bi-p9a">
+                    <rect key="frame" x="898" y="499" width="24" height="24"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="7Bm-EX-qf5"/>
+                        <constraint firstAttribute="width" secondItem="mTe-Bi-p9a" secondAttribute="height" id="UEU-4c-Mx8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="kNj-x0-sik"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="13" firstAttribute="top" secondItem="2" secondAttribute="top" constant="26" id="8rL-hh-b4H"/>
+                <constraint firstItem="laP-Xc-lez" firstAttribute="leading" secondItem="e1z-FR-sBo" secondAttribute="leading" id="AFw-dH-Luq"/>
+                <constraint firstItem="mTe-Bi-p9a" firstAttribute="top" secondItem="28" secondAttribute="top" constant="1" id="ELp-fz-rQJ"/>
+                <constraint firstItem="e1z-FR-sBo" firstAttribute="top" secondItem="laP-Xc-lez" secondAttribute="bottom" constant="25" id="H04-pD-Hme"/>
+                <constraint firstAttribute="bottom" secondItem="13" secondAttribute="bottom" id="Vj3-3o-h4s"/>
+                <constraint firstItem="13" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="Vla-wD-ueo"/>
+                <constraint firstItem="59I-54-vvY" firstAttribute="leading" secondItem="GRp-jD-lzy" secondAttribute="leading" id="WnR-VB-3Dp"/>
+                <constraint firstItem="GRp-jD-lzy" firstAttribute="leading" secondItem="kNj-x0-sik" secondAttribute="leading" constant="50" id="Zjr-Xn-hCr"/>
+                <constraint firstItem="mTe-Bi-p9a" firstAttribute="trailing" secondItem="28" secondAttribute="trailing" constant="-22" id="cp3-tr-9R5"/>
+                <constraint firstItem="59I-54-vvY" firstAttribute="top" secondItem="GRp-jD-lzy" secondAttribute="bottom" constant="10" id="fGq-Dr-pyo"/>
+                <constraint firstAttribute="trailing" secondItem="13" secondAttribute="trailing" id="l9e-Hd-yxT"/>
+                <constraint firstAttribute="trailing" secondItem="e1z-FR-sBo" secondAttribute="trailing" constant="80" id="oEp-1P-RmV"/>
+                <constraint firstAttribute="bottom" secondItem="e1z-FR-sBo" secondAttribute="bottom" constant="100" id="w8N-ox-w6u"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="laP-Xc-lez" secondAttribute="trailing" constant="5" id="wy8-wP-eJB"/>
+                <constraint firstItem="GRp-jD-lzy" firstAttribute="top" secondItem="2" secondAttribute="top" constant="70" id="zYx-XG-NyO"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="149"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logout" width="20" height="20"/>
+        <image name="mainBackground" width="1024" height="768"/>
+        <image name="menuFeedback" width="16" height="15.5"/>
+        <image name="menuInfo" width="15.5" height="15.5"/>
+        <image name="menuInsruction" width="13" height="17"/>
+        <image name="menuNotification" width="16.5" height="19"/>
+        <image name="menuSync" width="12.5" height="14.5"/>
+        <image name="profile" width="17" height="19"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

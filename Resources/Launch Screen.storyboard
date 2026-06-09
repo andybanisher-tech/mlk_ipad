@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Qqe-7W-Se3">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="mainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="wDa-08-l7P">
+                                <rect key="frame" x="0.0" y="26" width="1024" height="742"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мир Лечебной Косметики" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcE-jF-2ns">
+                                <rect key="frame" x="50" y="70" width="588.5" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Российский дистрибьютор Здоровья и Красоты" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdO-ys-wSc">
+                                <rect key="frame" x="50" y="140" width="639.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RCi-yb-aGL"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NcE-jF-2ns" firstAttribute="leading" secondItem="RCi-yb-aGL" secondAttribute="leading" constant="50" id="20H-LR-HBS"/>
+                            <constraint firstItem="IdO-ys-wSc" firstAttribute="top" secondItem="NcE-jF-2ns" secondAttribute="bottom" constant="10" id="Ibl-ZN-kWs"/>
+                            <constraint firstItem="NcE-jF-2ns" firstAttribute="top" secondItem="Qqe-7W-Se3" secondAttribute="top" constant="70" id="LYw-ar-82f"/>
+                            <constraint firstItem="wDa-08-l7P" firstAttribute="top" secondItem="Qqe-7W-Se3" secondAttribute="top" constant="26" id="dHF-ua-uod"/>
+                            <constraint firstAttribute="bottom" secondItem="wDa-08-l7P" secondAttribute="bottom" id="eP8-EX-QU0"/>
+                            <constraint firstItem="IdO-ys-wSc" firstAttribute="leading" secondItem="NcE-jF-2ns" secondAttribute="leading" id="nUM-Fv-h2z"/>
+                            <constraint firstItem="wDa-08-l7P" firstAttribute="leading" secondItem="Qqe-7W-Se3" secondAttribute="leading" id="vix-97-y5J"/>
+                            <constraint firstAttribute="trailing" secondItem="wDa-08-l7P" secondAttribute="trailing" id="xBy-DW-eWo"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51.951219512195124" y="374.23728813559325"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mainBackground" width="1024" height="768"/>
+    </resources>
+</document>

@@ -1,0 +1,18 @@
+//
+//  PartnersRequest.h
+//  MLK
+//
+//  Created by Alexandr Polienko on 12.12.2025.
+//
+
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface PartnersRequest : NSObject
+
+- (void)getPartners:(NSString *)phone;
+
+@end
+
+NS_ASSUME_NONNULL_END

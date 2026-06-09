@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A846923A2BECE39F004F0074 /* YandexMapsMobile in Frameworks */ = {isa = PBXBuildFile; productRef = A84692392BECE39F004F0074 /* YandexMapsMobile */; };
+		A8D058E22BD001B700ABDAC5 /* AppMetricaCore in Frameworks */ = {isa = PBXBuildFile; productRef = A8D058E12BD001B700ABDAC5 /* AppMetricaCore */; };
+		A8D058E42BD001B700ABDAC5 /* AppMetricaCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = A8D058E32BD001B700ABDAC5 /* AppMetricaCrashes */; };
+		E271021C2CF5FFDE00DB43A6 /* SHSPhoneComponent in Frameworks */ = {isa = PBXBuildFile; productRef = E271021B2CF5FFDE00DB43A6 /* SHSPhoneComponent */; };
+		E271021F2CF5FFF900DB43A6 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = E271021E2CF5FFF900DB43A6 /* SVProgressHUD */; };
+		E2E88F282D929DA0001C98D9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E88F272D929DA0001C98D9 /* CoreLocation.framework */; };
+		E2E88F2A2D929DA8001C98D9 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E88F292D929DA8001C98D9 /* CoreMotion.framework */; };
+		E2E88F2C2D929DAF001C98D9 /* DeviceCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E88F2B2D929DAF001C98D9 /* DeviceCheck.framework */; };
+		E2E88F2E2D929DC8001C98D9 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E88F2D2D929DBA001C98D9 /* libc++.tbd */; };
+		E2E88F302D929DD3001C98D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E88F2F2D929DD3001C98D9 /* SystemConfiguration.framework */; };
+		E2E88F322D929DED001C98D9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E88F312D929DED001C98D9 /* CoreTelephony.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A8F8AA202AFECE3800D5B643 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E27CA1AB2D929FCA002E2BC7 /* MLK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E88F272D929DA0001C98D9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E2E88F292D929DA8001C98D9 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		E2E88F2B2D929DAF001C98D9 /* DeviceCheck.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceCheck.framework; path = System/Library/Frameworks/DeviceCheck.framework; sourceTree = SDKROOT; };
+		E2E88F2D2D929DBA001C98D9 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E2E88F2F2D929DD3001C98D9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E2E88F312D929DED001C98D9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E2E88F232D928F9A001C98D9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"MLK-Info.plist",
+			);
+			target = 1D6058900D05DD3D006BFB54 /* MLK */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E2E88B312D928E74001C98D9 /* Custom Controls */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Custom Controls"; sourceTree = "<group>"; };
+		E2E88CA92D928EA5001C98D9 /* Core */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Core; sourceTree = "<group>"; };
+		E2E88E902D928EAF001C98D9 /* Networking */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Networking; sourceTree = "<group>"; };
+		E2E88F182D928EBD001C98D9 /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (E2E88F232D928F9A001C98D9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E88F282D929DA0001C98D9 /* CoreLocation.framework in Frameworks */,
+				E271021C2CF5FFDE00DB43A6 /* SHSPhoneComponent in Frameworks */,
+				E271021F2CF5FFF900DB43A6 /* SVProgressHUD in Frameworks */,
+				E2E88F322D929DED001C98D9 /* CoreTelephony.framework in Frameworks */,
+				A8D058E42BD001B700ABDAC5 /* AppMetricaCrashes in Frameworks */,
+				A846923A2BECE39F004F0074 /* YandexMapsMobile in Frameworks */,
+				A8D058E22BD001B700ABDAC5 /* AppMetricaCore in Frameworks */,
+				E2E88F302D929DD3001C98D9 /* SystemConfiguration.framework in Frameworks */,
+				E2E88F2E2D929DC8001C98D9 /* libc++.tbd in Frameworks */,
+				E2E88F2A2D929DA8001C98D9 /* CoreMotion.framework in Frameworks */,
+				E2E88F2C2D929DAF001C98D9 /* DeviceCheck.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E2E88E902D928EAF001C98D9 /* Networking */,
+				E2E88CA92D928EA5001C98D9 /* Core */,
+				E2E88B312D928E74001C98D9 /* Custom Controls */,
+				E2E88F182D928EBD001C98D9 /* Resources */,
+				E2E88F262D929DA0001C98D9 /* Frameworks */,
+				E27CA1AC2D929FD1002E2BC7 /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		E27CA1AC2D929FD1002E2BC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E27CA1AB2D929FCA002E2BC7 /* MLK.app */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		E2E88F262D929DA0001C98D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2E88F312D929DED001C98D9 /* CoreTelephony.framework */,
+				E2E88F2F2D929DD3001C98D9 /* SystemConfiguration.framework */,
+				E2E88F2D2D929DBA001C98D9 /* libc++.tbd */,
+				E2E88F2B2D929DAF001C98D9 /* DeviceCheck.framework */,
+				E2E88F292D929DA8001C98D9 /* CoreMotion.framework */,
+				E2E88F272D929DA0001C98D9 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MLK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MLK" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				A8F8AA202AFECE3800D5B643 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E2E88B312D928E74001C98D9 /* Custom Controls */,
+				E2E88CA92D928EA5001C98D9 /* Core */,
+				E2E88E902D928EAF001C98D9 /* Networking */,
+				E2E88F182D928EBD001C98D9 /* Resources */,
+			);
+			name = MLK;
+			packageProductDependencies = (
+				A8D058E12BD001B700ABDAC5 /* AppMetricaCore */,
+				A8D058E32BD001B700ABDAC5 /* AppMetricaCrashes */,
+				A84692392BECE39F004F0074 /* YandexMapsMobile */,
+				E271021B2CF5FFDE00DB43A6 /* SHSPhoneComponent */,
+				E271021E2CF5FFF900DB43A6 /* SVProgressHUD */,
+			);
+			productName = unviersaldemo;
+			productReference = E27CA1AB2D929FCA002E2BC7 /* MLK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MLK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			packageReferences = (
+				A8D058E02BD001B700ABDAC5 /* XCRemoteSwiftPackageReference "appmetrica-sdk-ios" */,
+				A84692382BECE39F004F0074 /* XCRemoteSwiftPackageReference "YandexMapsMobileLite" */,
+				E271021A2CF5FFDE00DB43A6 /* XCRemoteSwiftPackageReference "SHSPhoneComponent" */,
+				E271021D2CF5FFF900DB43A6 /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
+			);
+			productRefGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MLK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOL_FRAMEWORKS = UIKit;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20260225;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = 9TV6K26NF3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Resources/MLK_Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/MLK-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MLK;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.2.2;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mirlk.app;
+				PRODUCT_NAME = MLK;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOL_FRAMEWORKS = UIKit;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 20260225;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = 9TV6K26NF3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Resources/MLK_Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/MLK-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MLK;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.2.2;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mirlk.app;
+				PRODUCT_NAME = MLK;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOL_FRAMEWORKS = UIKit;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEVELOPMENT_TEAM = HGP3VVS36E;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = MLK;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOL_FRAMEWORKS = UIKit;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEVELOPMENT_TEAM = HGP3VVS36E;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = MLK;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MLK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MLK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A84692382BECE39F004F0074 /* XCRemoteSwiftPackageReference "YandexMapsMobileLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/c-villain/YandexMapsMobileLite";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.23.0;
+			};
+		};
+		A8D058E02BD001B700ABDAC5 /* XCRemoteSwiftPackageReference "appmetrica-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appmetrica/appmetrica-sdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.0;
+			};
+		};
+		E271021A2CF5FFDE00DB43A6 /* XCRemoteSwiftPackageReference "SHSPhoneComponent" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AlexGee17/SHSPhoneComponent.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E271021D2CF5FFF900DB43A6 /* XCRemoteSwiftPackageReference "SVProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AlexGee17/SVProgressHUD.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A84692392BECE39F004F0074 /* YandexMapsMobile */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A84692382BECE39F004F0074 /* XCRemoteSwiftPackageReference "YandexMapsMobileLite" */;
+			productName = YandexMapsMobile;
+		};
+		A8D058E12BD001B700ABDAC5 /* AppMetricaCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8D058E02BD001B700ABDAC5 /* XCRemoteSwiftPackageReference "appmetrica-sdk-ios" */;
+			productName = AppMetricaCore;
+		};
+		A8D058E32BD001B700ABDAC5 /* AppMetricaCrashes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8D058E02BD001B700ABDAC5 /* XCRemoteSwiftPackageReference "appmetrica-sdk-ios" */;
+			productName = AppMetricaCrashes;
+		};
+		E271021B2CF5FFDE00DB43A6 /* SHSPhoneComponent */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E271021A2CF5FFDE00DB43A6 /* XCRemoteSwiftPackageReference "SHSPhoneComponent" */;
+			productName = SHSPhoneComponent;
+		};
+		E271021E2CF5FFF900DB43A6 /* SVProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E271021D2CF5FFF900DB43A6 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
+			productName = SVProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

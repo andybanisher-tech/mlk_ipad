@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskCreateViewController">
+            <connections>
+                <outlet property="labelTaskEndDate" destination="5" id="46"/>
+                <outlet property="saveTask" destination="7" id="29"/>
+                <outlet property="setDeliveryDateBtn" destination="32" id="44"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayBackground" translatesAutoresizingMaskIntoConstraints="NO" id="w95-kg-ima">
+                    <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Срок исполнения:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                    <rect key="frame" x="40" y="50" width="153" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Дата" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5" customClass="MLKBorderedLabel">
+                    <rect key="frame" x="233" y="41" width="140" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="10"/>
+                        <constraint firstAttribute="height" constant="40" id="4AC-de-JX8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7" customClass="MLKBlueButton">
+                    <rect key="frame" x="165" y="224" width="170" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="8"/>
+                        <constraint firstAttribute="height" constant="44" id="9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <state key="normal" title="Создать">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="saveTaskPressed" destination="-1" eventType="touchUpInside" id="30"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32">
+                    <rect key="frame" x="233" y="41" width="140" height="40"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnSelectDateTapped:" destination="-1" eventType="touchUpInside" id="cFo-FD-hui"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rgM-OB-965"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5" firstAttribute="leading" secondItem="4" secondAttribute="trailing" constant="40" id="14"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="40" id="23"/>
+                <constraint firstAttribute="bottom" secondItem="7" secondAttribute="bottom" constant="32" id="26"/>
+                <constraint firstItem="7" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="31"/>
+                <constraint firstItem="32" firstAttribute="centerY" secondItem="5" secondAttribute="centerY" id="37"/>
+                <constraint firstAttribute="bottom" secondItem="w95-kg-ima" secondAttribute="bottom" id="8gQ-UX-nGm"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="rgM-OB-965" secondAttribute="top" constant="30" id="9yB-6K-UbG"/>
+                <constraint firstItem="32" firstAttribute="width" secondItem="5" secondAttribute="width" id="ArQ-Y6-F7X"/>
+                <constraint firstItem="w95-kg-ima" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="ITs-5Z-iOt"/>
+                <constraint firstAttribute="trailing" secondItem="w95-kg-ima" secondAttribute="trailing" id="P44-TW-1gp"/>
+                <constraint firstItem="32" firstAttribute="leading" secondItem="4" secondAttribute="trailing" constant="40" id="Qm1-RC-Tu9"/>
+                <constraint firstItem="w95-kg-ima" firstAttribute="top" secondItem="2" secondAttribute="top" id="t8P-Sg-07H"/>
+                <constraint firstItem="32" firstAttribute="height" secondItem="5" secondAttribute="height" id="xsH-RH-pzi"/>
+                <constraint firstItem="5" firstAttribute="centerY" secondItem="4" secondAttribute="centerY" id="zWb-wX-ZIu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="25" y="47"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="5">
+            <size key="intrinsicContentSize" width="42.5" height="21.5"/>
+        </designable>
+        <designable name="7">
+            <size key="intrinsicContentSize" width="73" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="grayBackground" width="1024" height="767"/>
+    </resources>
+</document>

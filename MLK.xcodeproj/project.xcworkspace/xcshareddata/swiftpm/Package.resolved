@@ -1,0 +1,51 @@
+{
+  "originHash" : "c4e5d5cd8f9ccf434e4465acf5a4aaddab35aa01d963175653d1006a754f688b",
+  "pins" : [
+    {
+      "identity" : "appmetrica-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/appmetrica/appmetrica-sdk-ios",
+      "state" : {
+        "revision" : "a5a7a0c8898395cb4090ccbb39b5da4eead2dd2f",
+        "version" : "5.15.0"
+      }
+    },
+    {
+      "identity" : "kscrash",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kstenerud/KSCrash",
+      "state" : {
+        "revision" : "c0177658fc771ae833b6d3b8f5f3f5a14d59ec03",
+        "version" : "2.1.2"
+      }
+    },
+    {
+      "identity" : "shsphonecomponent",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AlexGee17/SHSPhoneComponent.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "080ec66f1a6e70bd13bdeb13dde61f3741781a31"
+      }
+    },
+    {
+      "identity" : "svprogresshud",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AlexGee17/SVProgressHUD.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "79c1102a706437b52bdffb8d01884b24ee8d535b"
+      }
+    },
+    {
+      "identity" : "yandexmapsmobilelite",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/c-villain/YandexMapsMobileLite",
+      "state" : {
+        "revision" : "28d6c43c3db70936d4fe90d5f62c67c26688c167",
+        "version" : "4.23.0"
+      }
+    }
+  ],
+  "version" : 3
+}
